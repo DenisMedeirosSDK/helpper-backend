@@ -11,7 +11,7 @@ const uri = process.env.MONGO_URL
 const server = express()
 
 server.use(express.json())
-server.use(cors({ origin: 'https://helpper-fr.herokuapp.com/' }))
+server.use(cors())
 
 mongoose.connect(uri, {
   useNewUrlParser: true,
